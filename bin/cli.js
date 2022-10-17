@@ -1,10 +1,10 @@
 #! /usr/bin/env node
 // console.log(process.argv);
-const { program } = require('commander');
-const myhelp = require('../lib/core/help');
-const mycommander = require('../lib/core/myCommand');
+import { program } from 'commander';
+import { myHelp } from '../lib/core/help.js';
+import { myCommander } from '../lib/core/myCommand.js';
 
-myhelp(program);
-mycommander(program);
+myHelp(program);
+myCommander(program);
 
 program.parse(process.argv);
